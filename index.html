@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #232f3e;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 50px;
+    width: 100px;
+}
+
+#deliverToButton{
+    background-color: #2c3c50;
+    height: 40px;
+}
+#languageButton{
+    background-color: #2c3c50;
+    height: 40px;
+}
+
+
+.header-search input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.header-search button {
+    padding: 5px 10px;
+    background-color: #f90;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: large;
+}
+
+.under{
+    color: orange;
+}
+
+nav {
+    color: #eeeff0;
+    background-color: #2c3c50 ;
+    padding: 1px
+}
+nav  li {
+            display: inline;
+            margin-right: 20px;
+}
+ul li a {
+  text-decoration: none; 
+    color: white;
+}
+ul li a:hover {
+    color: gray;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    background-color: #c39688;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.left-button {
+    left: 0;
+    transform: translate(-100%, -50%);
+}
+
+.right-button {
+    right: 0;
+    transform: translate(100%, -50%);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-box {
+    width:300px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-box h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product-box p {
+    font-size: 14px;
+    color: #666;
+}
+#image {
+            width: 100%; /* Set width to 100% to make the image responsive */
+            height: auto; /* Allow the height to adjust proportionally based on the width */
+            max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+            max-height: 400px; /* Set a maximum height to prevent overly tall images */
+        }
+
+ </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <a href="https://www.amazon.com/ref=nav_logo">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.6sOw48FRBgnjbiMLDgRvNAHaEK&pid=Api&P=0&h=220" alt="Amazon Logo" >
+            </a>
+        </div>
+        
+        <div>
+            <button id="deliverToButton">&#128205; DELIVER TO= UK</button>
+<script>
+    let deliverToButton = document.querySelector('#deliverToButton'); 
+    deliverToButton.addEventListener('click', inputdata);
+    function inputdata(){
+        let cityname = prompt('ENTER COUNTRY');
+        deliverToButton.textContent= 'DELIVER TO=' + cityname;  
+    }
+</script>
+
+            </script>
+        </div>
+
+        <div class="header-search">
+            <input type="text" placeholder="Search Amazon">
+            <button>&#128269;</button>
+        </div>
+
+        <div>
+            <button id="languageButton"><i>language</i></button>
+            <script>
+                let languageButton = document.getElementById('languageButton'); 
+                languageButton.addEventListener('click', inputLanguageData);
+                function inputLanguageData(){
+                    let language = prompt('ENTER LANGUAGE');
+                    languageButton.textContent = language;  
+                }
+            </script>
+        </div>
+       
+        <div class="header-links">
+            <pre>
+            <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">&#128070;<u class="under">Hello, Sign in</u> &#8226;<u class="under">Account & Lists</u></a> <a href="https://www.amazon.com/gp/css/order-history?ref_=nav_orders_first">&#10148;Orders</a> <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart">&#128722;Cart</a>
+        </pre>
+        </div>
+    </header>
+  
+    <div>
+    <nav >
+        <form>
+        <ul>
+            <li onclick="pop()"> &#9660;ALL</li>
+            <li><a href="https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb">today's deal</a></li>
+            <li><a href="https://www.amazon.com/gp/buyagain?ie=UTF8&ref_=nav_cs_buy_again" ></a> buy again</li>
+            <li><a href="https://www.amazon.com/hz/contact-us/foresight/hubgateway" >customer service</a></li>
+            <li><a href=" https://www.amazon.com/registries?ref_=nav_cs_registry&ref_=nav_cs_registry" >registry</a></li>
+            <li><a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc" >gift cards</a></li>
+            <li><a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell" >sell</a></li>
+          </ul>         
+        </form> 
+    </nav>
+    </div>
+
+    <main>
+        <section>
+            <div class="container">
+                <img id="image" src="https://m.media-amazon.com/images/I/61okdP-S1HL._SX1500_.jpg" alt="motherdays">
+                <button class="button right-button" style="vertical-align: middle;" onclick="showNextImage()"><span>&#10140;</span></button>
+            </div>
+        
+        <!--   <section class="featured-products">
+                <h2>Featured Products</h2>
+            </section>
+        <section class="deals">
+            <h2>Deals of the Day</h2>
+        </section> -->
+
+       
+       
+           <div class="container">
+        <div class="product-box">
+            <h2>Deals in PCs</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="Product 1">
+            <p>show now</p>
+        </div>
+        <div class="product-box">
+            <h2>Refresh your space</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" alt="Product 2">
+            <p>see more</p>
+        </div>
+        <div class="product-box">
+            <h2>Home décor under $50</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v6._SY608_CB573698005_.jpg" alt="Product 3">
+            <p>Description of Product 3</p>
+        </div>
+        <div class="product-box">
+            <h2>Amazon Gadget Store</h2>
+            <img src="https://m.media-amazon.com/images/I/31qcGgiIK7L._SY150_.jpg" alt="Product 4">
+            <p>Description of Product 4</p>
+        </div>
+    </div>
+        </section>
+    </main>
+
+
+    <footer>
+    </footer>
+    <script>
+        
+        function pop() {
+      alert("loading...");
+        }
+    
+        let currentIndex = 0;
+        const images = [
+            "https://m.media-amazon.com/images/I/61okdP-S1HL._SX1500_.jpg",
+            "https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg",
+            "https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg",
+            "https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg"
+
+        ];
+
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('image').src = images[currentIndex];
+        }
+        function startSlideshow() {
+            setInterval(showNextImage, 1500); // Change image every 3 seconds (3000 milliseconds)
+        }
+
+        startSlideshow(); 
+    </script>
+    
+</body>
+</html>
+
+
